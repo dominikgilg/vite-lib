@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.js"),
+      entry: "src/index.js",
       name: "vite-lib",
     },
     external: ["react", "react-dom", "@shopify/hydrogen"],
