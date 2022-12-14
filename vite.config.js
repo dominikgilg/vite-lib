@@ -1,12 +1,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { resolve } from "path";
+import path from "node:path";
 
 export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: resolve("src", "index.js"),
+      entry: path.resolve(__dirname, "src/index.js"),
       name: "vite-lib",
     },
     external: ["react", "react-dom", "@shopify/hydrogen"],
