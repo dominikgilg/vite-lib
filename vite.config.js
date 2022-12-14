@@ -7,7 +7,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/index.js",
+      formats: ["es", "umd"],
       name: "vite-lib",
+      fileName: (format) => `index.${format}.js`,
     },
     external: ["react", "react-dom", "@shopify/hydrogen"],
     output: {

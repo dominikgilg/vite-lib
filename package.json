@@ -14,12 +14,12 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/vite-lib.es.js",
-      "require": "./dist/vite-lib.umd.cjs"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     }
   },
-  "main": "./dist/vite-lib.umd.cjs",
-  "module": "./dist/vite-lib.es.js",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
   "devDependencies": {
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
