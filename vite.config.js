@@ -1,21 +1,23 @@
-import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "node:path";
+import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: "src/index.js",
+      entry: path.resolve(__dirname, "src/index.client.js"),
+      name: "@nosto/nosto-react",
       formats: ["es", "umd"],
-      name: "vite-lib",
       fileName: (format) => `index.${format}.js`,
     },
-    external: ["react", "react-dom", "@shopify/hydrogen"],
-    output: {
-      globals: {
-        react: "React",
-        "react-dom": "ReactDOM",
+    rollupOptions: {
+      external: ["react", "react-dom", "snakize"],
+      output: {
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+        },
       },
     },
   },
