@@ -15,7 +15,7 @@
   "exports": {
     ".": {
       "import": "./dist/vite-lib.js",
-      "require": "./dist/vite-lib.umd.jss"
+      "require": "./dist/vite-lib.umd.cjs"
     }
   },
   "main": "./dist/vite-lib.umd.cjs",
