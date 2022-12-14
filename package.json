@@ -42,13 +42,13 @@
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2"
   },
-  "main": "./dist/index.es.client.js",
-  "module": "./dist/index.es.client.js",
+  "main": "./dist/index.es.js",
+  "module": "./dist/index.es.js",
   "types": "./src/types.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.es.client.js",
-      "require": "./dist/index.umd.client.js"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     }
   },
   "bugs": {
