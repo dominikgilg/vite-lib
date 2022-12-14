@@ -14,9 +14,9 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
-    "prepare": "vite build",
+    "prepare": "yarn build",
     "typecheck": "tsc",
     "tslint": "tslint 'src/**/*.ts?(x)'",
     "clean": "rimraf dist",
